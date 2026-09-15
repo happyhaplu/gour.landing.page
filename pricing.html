@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="GOUR pricing. Build software with AI."
+    content="GOUR pricing. Simple plans for building software with AI."
   >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,7 +51,7 @@
     }
 
     .content {
-      max-width: 700px;
+      max-width: 820px;
     }
 
     h1,
@@ -73,21 +73,29 @@
       font-size: 19px;
     }
 
-    .pricing-section {
-      margin-top: 52px;
-      padding-top: 36px;
-      border-top: 1px solid var(--border);
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 56px;
     }
 
-    .plan-name {
-      margin: 0 0 8px;
-      font-size: 24px;
+    .plan {
+      padding: 32px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    .plan h2 {
+      margin: 0 0 12px;
+      font-size: 25px;
     }
 
     .price {
-      margin: 0 0 14px;
+      margin: 0 0 16px;
       font-family: "Space Grotesk", sans-serif;
-      font-size: 44px;
+      font-size: 42px;
       font-weight: 600;
       letter-spacing: -0.04em;
     }
@@ -101,76 +109,17 @@
     }
 
     .description {
-      margin: 0 0 24px;
-      max-width: 600px;
+      margin: 0;
       color: var(--muted);
     }
 
-    ul {
-      margin: 0 0 28px;
-      padding-left: 22px;
-    }
-
-    li {
-      margin-bottom: 9px;
-    }
-
-    .note {
-      margin: 18px 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .request-button {
+    .contact-link {
       display: inline-block;
-      margin-top: 10px;
-      padding: 12px 22px;
-      border-radius: 8px;
-      background: var(--text);
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-    }
-
-    .request-button:hover {
-      opacity: 0.88;
-    }
-
-    .custom {
-      margin-top: 50px;
-      padding-top: 36px;
-      border-top: 1px solid var(--border);
-    }
-
-    .custom h2 {
-      margin: 0 0 10px;
-      font-size: 24px;
-    }
-
-    .custom p {
-      max-width: 600px;
-      color: var(--muted);
-    }
-
-    .payments {
-      margin-top: 50px;
-      padding-top: 36px;
-      border-top: 1px solid var(--border);
-    }
-
-    .payments h2 {
-      margin: 0 0 12px;
-      font-size: 22px;
-    }
-
-    .payments p {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .payments a {
+      margin-top: 24px;
       color: var(--text);
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 4px;
     }
 
     footer {
@@ -210,8 +159,8 @@
         padding: 60px 0 80px;
       }
 
-      .price {
-        font-size: 38px;
+      .pricing {
+        grid-template-columns: 1fr;
       }
 
       .footer-row {
@@ -231,104 +180,46 @@
         <h1>Pricing</h1>
 
         <p class="intro">
-          Build software with AI. GOUR helps startups, agencies, and
-          teams turn ideas and requirements into working software.
+          Simple pricing for building software with GOUR.
         </p>
 
+        <section class="pricing">
 
-        <section class="pricing-section">
+          <div class="plan">
+            <h2>GOUR Pro</h2>
 
-          <h2 class="plan-name">GOUR</h2>
+            <div class="price">
+              $99 <span>/ month</span>
+            </div>
 
-          <div class="price">
-            $99 <span>/ month</span>
+            <p class="description">
+              Build and iterate on software with AI, with access to
+              GOUR's development tools and features.
+            </p>
           </div>
 
-          <p class="description">
-            Everything you need to build software with GOUR.
-          </p>
+          <div class="plan">
+            <h2>Custom</h2>
 
-          <ul>
-            <li>AI-powered software development</li>
-            <li>Build and iterate using natural-language instructions</li>
-            <li>Project and workspace access</li>
-            <li>GitHub integration</li>
-            <li>AI and cloud infrastructure usage</li>
-            <li>Ongoing product improvements and support</li>
-          </ul>
+            <div class="price">
+              Custom
+            </div>
 
-          <p class="note">
-            Your plan includes the usage and features available under
-            the GOUR service at the time of purchase. Certain high-volume
-            or additional infrastructure usage may require additional
-            charges.
-          </p>
+            <p class="description">
+              For agencies, teams, and businesses with higher usage or
+              specific requirements.
+            </p>
 
-          <p class="note">
-            Cancel anytime. Your subscription will continue through the
-            current paid billing period after cancellation and will not
-            automatically renew for the next billing period.
-          </p>
-
-          <a
-            href="mailto:hello@gour.io?subject=Request%20access%20to%20GOUR"
-            class="request-button"
-          >
-            Request access
-          </a>
-
-        </section>
-
-
-        <section class="custom">
-
-          <h2>Custom pricing</h2>
-
-          <p>
-            For agencies, teams, and businesses that need higher usage,
-            custom requirements, or additional support.
-          </p>
-
-          <p>
-            We can create a plan based on your requirements.
-          </p>
-
-          <a
-            href="mailto:hello@gour.io?subject=Custom%20GOUR%20pricing"
-            class="request-button"
-          >
-            Request access
-          </a>
-
-        </section>
-
-
-        <section class="payments">
-
-          <h2>Payments</h2>
-
-          <p>
-            Prices are shown in USD unless otherwise stated.
-            Payments are securely processed through our payment provider.
-          </p>
-
-          <p>
-            By purchasing GOUR, you agree to our
-            <a href="/terms.html">Terms of Service</a>,
-            Privacy Policy, and Refund &amp; Cancellation Policy.
-          </p>
-
-          <p>
-            Need help?
-            <a href="mailto:hello@gour.io">hello@gour.io</a>
-          </p>
+            <a href="/contact.html" class="contact-link">
+              Contact us
+            </a>
+          </div>
 
         </section>
 
       </div>
     </div>
   </main>
-
 
   <footer>
     <div class="page-wrap footer-row">
