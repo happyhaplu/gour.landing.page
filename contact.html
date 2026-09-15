@@ -19,6 +19,12 @@
     rel="stylesheet"
   >
 
+  <!-- WhatsApp Icon -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
   <style>
     :root {
       --bg: #f7f8fa;
@@ -104,6 +110,31 @@
       text-underline-offset: 4px;
     }
 
+    .whatsapp-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 8px;
+      padding: 12px 18px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+      color: var(--text);
+      text-decoration: none !important;
+      font-size: 15px !important;
+      font-weight: 500;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .whatsapp-button:hover {
+      border-color: #b8bdc5;
+      transform: translateY(-1px);
+    }
+
+    .whatsapp-button i {
+      font-size: 19px;
+    }
+
     .address {
       max-width: 500px;
       color: var(--muted);
@@ -185,17 +216,21 @@
 
           <div class="contact-item">
             <h2>WhatsApp</h2>
+
             <a
               href="https://wa.me/919852012648"
+              class="whatsapp-button"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Chat with us on WhatsApp
+              <i class="fa-brands fa-whatsapp"></i>
+              Chat on WhatsApp
             </a>
           </div>
 
           <div class="contact-item">
             <h2>Address</h2>
+
             <p class="address">
               Gour Corporation<br>
               22, W/O- BAIJNATH SINGH, TOLA-NAKAIN PANCH-RIUR,
