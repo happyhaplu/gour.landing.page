@@ -1,1 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Contact — GOUR</title>
+  <meta
+    name="description"
+    content="Contact GOUR."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --surface: #ffffff;
+      --text: #111318;
+      --muted: #626873;
+      --border: #e2e5e9;
+      --accent: #315efb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "IBM Plex Sans", sans-serif;
+      line-height: 1.65;
+    }
+
+    .page-wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding-inline: 32px;
+    }
+
+    main {
+      padding: 90px 0 120px;
+    }
+
+    .content {
+      max-width: 700px;
+    }
+
+    h1,
+    h2 {
+      font-family: "Space Grotesk", sans-serif;
+      letter-spacing: -0.03em;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(42px, 7vw, 64px);
+      line-height: 1.05;
+    }
+
+    .intro {
+      margin: 0;
+      color: var(--muted);
+      font-size: 19px;
+      max-width: 600px;
+    }
+
+    .contact-section {
+      margin-top: 52px;
+      padding-top: 36px;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 24px;
+    }
+
+    .contact-item {
+      margin-bottom: 28px;
+    }
+
+    .contact-item p {
+      margin: 4px 0 0;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--text);
+    }
+
+    .contact-button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 12px 22px;
+      border-radius: 8px;
+      background: var(--text);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-button:hover {
+      opacity: 0.88;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: var(--text);
+    }
+
+    @media (max-width: 700px) {
+      .page-wrap {
+        padding-inline: 20px;
+      }
+
+      main {
+        padding: 60px 0 80px;
+      }
+
+      .footer-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <div class="page-wrap">
+      <div class="content">
+
+        <h1>Contact</h1>
+
+        <p class="intro">
+          Have a question, want to request access, or want to discuss
+          how GOUR could work for your team? Get in touch.
+        </p>
+
+        <section class="contact-section">
+
+          <div class="contact-item">
+            <h2>Email</h2>
+            <p>
+              <a href="mailto:hello@gour.io">hello@gour.io</a>
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <h2>Phone</h2>
+            <p>
+              +91 98520 12648
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <h2>Request access</h2>
+            <p>
+              GOUR is currently available by request.
+            </p>
+
+            <a
+              class="contact-button"
+              href="mailto:hello@gour.io?subject=Request%20access%20to%20GOUR"
+            >
+              Request access
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <h2>Business Address</h2>
+            <p>
+              22, W/O- BAIJNATH SINGH, TOLA-NAKAIN PANCH-RIUR,<br>
+              BLOCK-BARUN, AURANGABAD, BIHAR, 824112
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <h2>Business Information</h2>
+            <p>
+              GOUR<br>
+              Indian Sole Proprietorship<br>
+              GSTIN: 10HOZPK9491F1Z8
+            </p>
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="page-wrap footer-row">
+
+      <span>Backed by the E2B for Startups program</span>
+
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="/pricing.html">Pricing</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+
+    </div>
+  </footer>
+
+</body>
+</html>
