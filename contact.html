@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Contact — GOUR</title>
+
   <meta
     name="description"
-    content="Contact GOUR."
+    content="Contact Gour Corporation for GOUR support and business inquiries."
   >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +26,6 @@
       --text: #111318;
       --muted: #626873;
       --border: #e2e5e9;
-      --accent: #315efb;
     }
 
     * {
@@ -47,7 +47,7 @@
     }
 
     main {
-      padding: 90px 0 120px;
+      padding: 90px 0 110px;
     }
 
     .content {
@@ -67,49 +67,46 @@
     }
 
     .intro {
-      margin: 0;
+      margin: 0 0 50px;
+      max-width: 600px;
       color: var(--muted);
       font-size: 19px;
-      max-width: 600px;
     }
 
     .contact-section {
-      margin-top: 52px;
-      padding-top: 36px;
       border-top: 1px solid var(--border);
     }
 
-    h2 {
-      margin: 0 0 16px;
-      font-size: 24px;
+    .contact-item {
+      padding: 28px 0;
+      border-bottom: 1px solid var(--border);
     }
 
-    .contact-item {
-      margin-bottom: 28px;
+    .contact-item h2 {
+      margin: 0 0 6px;
+      font-size: 21px;
     }
 
     .contact-item p {
-      margin: 4px 0 0;
+      margin: 0;
       color: var(--muted);
     }
 
-    a {
+    .contact-item a {
       color: var(--text);
-    }
-
-    .contact-button {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 12px 22px;
-      border-radius: 8px;
-      background: var(--text);
-      color: #fff;
       text-decoration: none;
+      font-size: 17px;
       font-weight: 500;
     }
 
-    .contact-button:hover {
-      opacity: 0.88;
+    .contact-item a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .address {
+      max-width: 500px;
+      color: var(--muted);
     }
 
     footer {
@@ -166,54 +163,43 @@
         <h1>Contact</h1>
 
         <p class="intro">
-          Have a question, want to request access, or want to discuss
-          how GOUR could work for your team? Get in touch.
+          Have a question about GOUR, need support, or want to discuss
+          working with us? Get in touch.
         </p>
 
         <section class="contact-section">
 
           <div class="contact-item">
             <h2>Email</h2>
-            <p>
-              <a href="mailto:hello@gour.io">hello@gour.io</a>
-            </p>
-          </div>
-
-          <div class="contact-item">
-            <h2>Phone</h2>
-            <p>
-              +91 98520 12648
-            </p>
-          </div>
-
-          <div class="contact-item">
-            <h2>Request access</h2>
-            <p>
-              GOUR is currently available by request.
-            </p>
-
-            <a
-              class="contact-button"
-              href="mailto:hello@gour.io?subject=Request%20access%20to%20GOUR"
-            >
-              Request access
+            <a href="mailto:hello@gour.io">
+              hello@gour.io
             </a>
           </div>
 
           <div class="contact-item">
-            <h2>Business Address</h2>
-            <p>
-              22, W/O- BAIJNATH SINGH, TOLA-NAKAIN PANCH-RIUR,<br>
-              BLOCK-BARUN, AURANGABAD, BIHAR, 824112
-            </p>
+            <h2>Call</h2>
+            <a href="tel:+919852012648">
+              +91 98520 12648
+            </a>
           </div>
 
           <div class="contact-item">
-            <h2>Business Information</h2>
-            <p>
-              GOUR<br>
-              Indian Sole Proprietorship<br>
-              GSTIN: 10HOZPK9491F1Z8
+            <h2>WhatsApp</h2>
+            <a
+              href="https://wa.me/919852012648"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Chat with us on WhatsApp
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <h2>Address</h2>
+            <p class="address">
+              Gour Corporation<br>
+              22, W/O- BAIJNATH SINGH, TOLA-NAKAIN PANCH-RIUR,
+              BLOCK-BARUN, AURANGABAD, BIHAR, 824112, India
             </p>
           </div>
 
@@ -226,7 +212,7 @@
   <footer>
     <div class="page-wrap footer-row">
 
-      <span>Backed by the E2B for Startups program</span>
+      <span>© 2026 Gour Corporation</span>
 
       <nav class="footer-links" aria-label="Footer links">
         <a href="/pricing.html">Pricing</a>
